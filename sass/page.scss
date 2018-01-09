@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.T_index{
+    .content{
+        position: relative;
+        height: 91.8%;
+        overflow:hidden;
+        .banner{
+            width: 100%;
+            height: 13.041666rem;
+            .swiper-slide img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .C_footer{
+        width: 100%;
+        height: 3.125rem;
+    //  background: black;
+        ul{
+            width: 100%;
+            height: 100%;
+            li{
+                width: 20%;
+                height: 100%;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    //          background: pink;
+                i{
+                    display: block;
+                    width: 1.4375rem;
+                    height: 1.4375rem;
+                }
+                span{
+                    color: #686868;
+                    font-size: 0.625rem;
+                }
+                 &:nth-child(1){
+                     i{
+                        background: url("../img/icons/tab_button_homepage_selected.png") no-repeat 0.020833rem 0.020833rem;
+    //                  background-size: 1.3125rem 1.083333rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(2){
+                     i{
+                        background: url("../img/icons/tab_button_store_normal.png") no-repeat center center;
+    //                  background-size: 1.145833rem 1.354166rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(3){
+                     i{
+                        background: url("../img/icons/tab_button_community_normal.png") no-repeat center center;
+    //                  background-size: 1.375rem 1.354166rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(4){
+                     i{
+                        background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center;
+    //                  background-size: 1.104166rem 1.354166rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(5){
+                     i{
+                        background: url("../img/icons/tab_button_my_normal.png") no-repeat center center;
+                        background-size: 100%;
+                     }
+                    
+                }
+            }
+           
+        }
+    }
+
+}
