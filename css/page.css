@@ -3,6 +3,15 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_index .content { position: relative; height: 91.8%; overflow: hidden; }
 .T_index .content .banner { width: 100%; height: 13.041666rem; }
 .T_index .content .banner .swiper-slide img { width: 100%; height: 100%; }
+.T_index .content .type { width: 100%; height: 17.708333rem; }
+.T_index .content .type .type-top { width: 100%; height: 67.3%; display: flex; }
+.T_index .content .type .type-top .left { width: 50%; height: 100%; background: url("../img/index-img/shouye0.png") no-repeat center center; background-size: 100%; }
+.T_index .content .type .type-top .right { width: 50%; height: 100%; }
+.T_index .content .type .type-top .right .top { width: 100%; height: 50%; background: url("../img/index-img/shouye_03.png") no-repeat center center; background-size: 100%; }
+.T_index .content .type .type-top .right .bottom { width: 100%; height: 50%; background: url("../img/index-img/shouye_05.png") no-repeat center center; background-size: 100%; }
+.T_index .content .type .type-bottom { width: 100%; height: 32.7%; display: flex; }
+.T_index .content .type .type-bottom .activity { width: 50%; height: 100%; background: url("../img/index-img/shouye_06.png") no-repeat center center; background-size: 100%; }
+.T_index .content .type .type-bottom .chahua { width: 50%; height: 100%; background: url("../img/index-img/shouye_07.png") no-repeat center center; background-size: 100%; }
 .T_index .C_footer { width: 100%; height: 3.125rem; }
 .T_index .C_footer ul { width: 100%; height: 100%; }
 .T_index .C_footer ul li { width: 20%; height: 100%; float: left; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }

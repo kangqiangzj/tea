@@ -1,0 +1,10 @@
+{
+	"status":1,
+	"message":"success",
+	"data":[
+		{"time":"Jan.08.2018","img":"../img/index-img/shouye_09.png","title1":"你真的会保存普洱吗","title2":"这些存茶方式会害了你的普洱","detal":"../img/detail/puer.jpg"},
+		{"time":"Jan.07.2018","img":"../img/index-img/shouye_11.png","title1":"金花茶是金银花吗","title2":"教你重新认识金花茶","detal":"../img/detail/jinhua.jpg"},
+		{"time":"Jan.06.2018","img":"../img/index-img/shouye_13.png","title1":"经茶间--经过一杯茶","title2":"","detal":"../img/detail/jinchajian.jpg"},
+		{"time":"Jan.06.2018","img":"../img/index-img/shouye_19.png","title1":"红茶对胃肠道的好处","title2":"细数红茶的保健功能","detal":"../img/detail/puer.jpg"}
+	]
+}
