@@ -1,6 +1,6 @@
 body { display: flex; flex-direction: column; justify-content: space-between; }
 
-.C_footer { width: 100%; height: 3.125rem; }
+.C_footer { width: 100%; height: 3.125rem; display: block; position: fixed; bottom: 0; left: 0; background: white; }
 .C_footer ul { width: 100%; height: 100%; }
 .C_footer ul li { width: 20%; height: 100%; float: left; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
 .C_footer ul li i { display: block; width: 1.4375rem; height: 1.4375rem; }
@@ -11,7 +11,10 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .C_footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center; background-size: 100%; }
 .C_footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
 
-.T_index .content { position: relative; height: 91.8%; overflow: hidden; }
+.T_index .index-header { width: 100%; height: 2.916666rem; position: fixed; top: 0; left: 0; z-index: 9999; display: none; background: #f3f5f7; }
+.T_index .index-header ul { width: 100%; height: 100%; display: flex; }
+.T_index .index-header ul li { width: 20%; height: 100%; line-height: 2.916666rem; text-align: center; font-size: 0.833333rem; }
+.T_index .content { position: relative; height: 100%; overflow: hidden; }
 .T_index .content #jiazai { width: 100%; height: 8.333333rem; position: absolute; top: -8.333333rem; left: 0; background: url("../img/jiazai.gif") no-repeat center 40%; background-size: 100%; }
 .T_index .content .banner { width: 100%; height: 13.041666rem; }
 .T_index .content .banner .swiper-slide img { width: 100%; height: 100%; }
@@ -40,13 +43,23 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_wenchuang header .title { background: url("../img/wenchuang/wc.png") no-repeat center center; background-size: 2.291666rem 1.104166rem; }
 .T_wenchuang header .ruzhu { margin-right: 1.041666rem; background: url("../img/wenchuang/ruzhu.png") no-repeat center center; background-size: 3.75rem 0.958333rem; }
 .T_wenchuang .content { width: 100%; flex: 1; overflow: hidden; position: relative; }
+.T_wenchuang .content #jiazai { width: 100%; height: 8.333333rem; position: absolute; top: -8.333333rem; left: 0; background: url("../img/jiazai.gif") no-repeat center 40%; background-size: 100%; }
 .T_wenchuang .content .banner { width: 100%; height: 8.125rem; }
 .T_wenchuang .content .banner img { width: 100%; height: 100%; }
-.T_wenchuang .content .banner2 { width: 100%; height: 11.25rem; margin-top: 1.25rem; padding-left: 0.41667rem; }
+.T_wenchuang .content .banner2 { width: 100%; height: 11.25rem; margin-top: 1.25rem; padding-left: 0.416666rem; }
 .T_wenchuang .content .banner2 img { width: 6.520833rem; height: 6.520833rem; }
 .T_wenchuang .content .banner2 p { width: 6.520833rem; height: 2.416666rem; line-height: 2.416666rem; text-align: center; }
 .T_wenchuang .content .banner2 .p1 { font-size: 0.833333rem; color: #1e1e1e; }
 .T_wenchuang .content .banner2 .price { color: #9fb427; font-size: 0.583333rem; }
+.T_wenchuang .content .products { padding: 0 0.416666rem; width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.T_wenchuang .content .products section { width: 49%; height: 18.4375rem; }
+.T_wenchuang .content .products section .prod_pic { width: 100%; height: 62.57%; }
+.T_wenchuang .content .products section .prod_pic img { width: 100%; height: 100%; }
+.T_wenchuang .content .products section .title { width: 88.4%; padding: 0 0.625rem; height: 3.625rem; text-align: center; display: flex; align-items: center; }
+.T_wenchuang .content .products section .title h4 { height: 1.041666rem; line-height: 1.104166rem; font-size: 0.75rem; }
+.T_wenchuang .content .products section .author { display: flex; justify-content: space-between; width: 88.4%; padding: 0 0.625rem; height: 3.0625rem; font-size: 0.666666rem; }
+.T_wenchuang .content .products section .author .prod_maker { height: 100%; line-height: 3.0625rem; color: #7e7e7e; }
+.T_wenchuang .content .products section .author .prod_price { height: 100%; line-height: 3.0625rem; color: #aabf36; }
 .T_wenchuang footer ul li:nth-child(1) i { background: url("../img/icons/tab_button_homepage_normal.png") no-repeat center center; background-size: 100%; }
 .T_wenchuang footer ul li:nth-child(2) i { background: url("../img/icons/tab_button_store_selected.png") no-repeat center center; background-size: 100%; }
 .T_wenchuang footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }

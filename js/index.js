@@ -3,6 +3,10 @@ $(function(){
 	loadSwiper();
 	loadScroll()
 	getData()
+	var currentY;
+	document.addEventListener("touchstart",function(){
+		currentY = iscroll.y;
+	})
 	document.addEventListener("touchend",function(){
 		//下拉刷新
 		if(iscroll.y>0){
@@ -14,7 +18,20 @@ $(function(){
 		if(iscroll.y<iscroll.maxScrollY-50){
 			getData();
 		}
-	})
+		//header显示隐藏
+		if(iscroll.y < -300){
+			$(".index-header").css("display","block");
+		}else{
+			$(".index-header").css("display","none");
+		}
+		//footer显示隐藏
+		if(currentY > iscroll.y){
+			$(".C_footer").css("display","none");
+		}else{
+			$(".C_footer").css("display","block");
+		}
+	});
+	
 })
 
 //加载轮播

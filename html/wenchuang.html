@@ -19,7 +19,11 @@
 		<!--滚动区域-->
 		<div class="content" id="wrapper">
 			<div class="scroll_content" id="scrollbar">
-				<!--轮播图-->
+				<!--加载中-->
+				<div id="jiazai">
+							
+				</div>
+				<!--轮播图1-->
 				<div class="banner swiper-container"  id="lunbo1">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide"><img src="../img/wenchuang/lunbo.png"/></div>
@@ -28,7 +32,7 @@
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
-				
+				<!--轮播图2-->
 				<div class="banner2 swiper-container" id="lunbo2">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -63,8 +67,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			
+				
+				<!--products-->
+				<div class="products">
+
+				</div>
+			</div>		
 		</div>
 		<!--footer-->
 		<footer class="C_footer">
@@ -97,5 +105,17 @@
 		<script src="../js/lib/template.js"></script>
 		<script src="../js/wenchuang.js"></script>
 		<script src="../js/public.js"></script>
+		<script type="text/html" id="products">
+			{{each datas as data}}
+				<section>
+					<div class="prod_pic"><img src="{{data.img}}"/></div>
+					<div class="title"><h4>{{data.title}}</h4></div>
+					<div class="author">
+						<div class="prod_maker">{{data.maker}}</div>
+						<div class="prod_price">￥<span class="price">{{data.price}}</span></div>						
+					</div>
+				</section>
+			{{/each}}
+		</script>
 	</body>
 </html>

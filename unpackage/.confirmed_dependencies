@@ -1,21 +1,34 @@
 {
-	"html/index.html": {
-		"resources": [
-			"js/lib/template.js",
-			"js/lib/swiper.min.js",
-			"img/jiazai.gif",
-			"js/public.js",
-			"js/lib/iscroll-min.js",
-			"js/lib/zepto_1.1.3.js",
-			"js/index.js"
-		],
-		"refer": [
-			"html/wenchuang.html"
-		]
-	},
-	"html/wenchuang.html": {
-		"refer": [
-			"html/index.html"
-		]
-	}
+  "html/index.html": {
+    "resources": [
+      "js/lib/template.js",
+      "js/lib/swiper.min.js",
+      "img/jiazai.gif",
+      "js/public.js",
+      "js/lib/iscroll-min.js",
+      "js/lib/zepto_1.1.3.js",
+      "js/index.js",
+      "img/index-img/shouye_07.png",
+      "img/index-img/shouye_03.png",
+      "img/index-img/shouye_27.png",
+      "img/index-img/shouye_13.png",
+      "img/index-img/shouye_05.png",
+      "img/index-img/shouye_23.png",
+      "img/index-img/shouye0.png",
+      "img/index-img/shouye_06.png",
+      "img/icons/tab_button_nearby_normal.png",
+      "img/icons/tab_button_community_normal.png",
+      "img/icons/tab_button_homepage_selected.png",
+      "img/icons/tab_button_store_normal.png",
+      "img/icons/tab_button_my_normal.png"
+    ],
+    "refer": [
+      "html/wenchuang.html"
+    ]
+  },
+  "html/wenchuang.html": {
+    "refer": [
+      "html/index.html"
+    ]
+  }
 }

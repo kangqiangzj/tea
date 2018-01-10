@@ -6,11 +6,16 @@ body{
    .C_footer{
         width: 100%;
         height: 3.125rem;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: white;
     //  background: black;
         ul{
             width: 100%;
             height: 100%;
-            li{
+            li{        
                 width: 20%;
                 height: 100%;
                 float: left;
@@ -72,9 +77,32 @@ body{
         }
     }
 .T_index{
+    .index-header{
+    width: 100%;
+    height: 2.916666rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    background: #f3f5f7;
+    ul{
+        width:100%;
+        height: 100%;
+        display: flex;
+        li{
+            width: 20%;
+            height: 100%;
+            line-height: 2.916666rem;
+            text-align: center;
+            font-size: 0.833333rem;                   
+        }
+    }
+}
     .content{
         position: relative;
-        height: 91.8%;
+//      height: 91.8%;
+        height: 100%;
         overflow:hidden;
         #jiazai{
             width: 100%;
@@ -221,6 +249,15 @@ body{
         flex: 1;
         overflow: hidden;
         position: relative;
+         #jiazai{
+            width: 100%;
+           height: 8.333333rem;
+            position: absolute;
+            top: -8.333333rem;
+            left: 0;
+            background: url("../img/jiazai.gif") no-repeat center 40%;
+            background-size: 100%;
+        }
         .banner{
             width: 100%;
             height: 8.125rem;
@@ -233,7 +270,7 @@ body{
            width: 100%;
            height: 11.25rem;
            margin-top: 1.25rem;
-           padding-left:0.416666rem ;
+           padding-left:0.416666rem;
            img{
                width: 6.520833rem;
                height: 6.520833rem;
@@ -251,6 +288,58 @@ body{
            .price{
                color: #9fb427;
                font-size: 0.583333rem;
+           }
+       }
+       .products{
+           padding:0 0.416666rem;
+           width: 100%;
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+           section{
+               width: 49%;
+               height: 18.4375rem;
+               .prod_pic{                
+                   width:100%;
+                   height: 62.57%;
+                   img{
+                       width: 100%;
+                       height: 100%;
+                   }                 
+               }
+               .title{
+                   width: 88.4%;
+                   padding: 0 0.625rem;
+                   height: 3.625rem;
+                   text-align: center;
+                   display: flex;
+                    align-items: center;
+                   h4{                      
+                       height: 1.041666rem;
+                       line-height: 1.104166rem;
+                       font-size: 0.75rem;
+                   }
+               }
+               .author{
+                    display: flex;
+                   justify-content: space-between;
+                    width: 88.4%;
+                   padding: 0 0.625rem; 
+                   height: 3.0625rem;
+                   font-size: 0.666666rem;
+                  
+                   .prod_maker{
+                       height: 100%;
+                       line-height:3.0625rem;
+                        color: #7e7e7e;
+                   }
+                   .prod_price{
+                       height: 100%;
+                       line-height:3.0625rem; 
+                       color: #aabf36;                  
+                   }
+               }
+               
            }
        }
     }
