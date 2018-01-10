@@ -3,11 +3,88 @@ body{
     flex-direction:column;
     justify-content: space-between;
 }
+   .C_footer{
+        width: 100%;
+        height: 3.125rem;
+    //  background: black;
+        ul{
+            width: 100%;
+            height: 100%;
+            li{
+                width: 20%;
+                height: 100%;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    //          background: pink;
+                i{
+                    display: block;
+                    width: 1.4375rem;
+                    height: 1.4375rem;
+                }
+                span{
+                    color: #686868;
+                    font-size: 0.625rem;
+                }
+                 &:nth-child(1){
+                     i{
+                        background: url("../img/icons/tab_button_homepage_selected.png") no-repeat center center;
+    //                  background-size: 1.3125rem 1.083333rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(2){
+                     i{
+                        background: url("../img/icons/tab_button_store_normal.png") no-repeat center center;
+    //                  background-size: 1.145833rem 1.354166rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(3){
+                     i{
+                        background: url("../img/icons/tab_button_community_normal.png") no-repeat center center;
+    //                  background-size: 1.375rem 1.354166rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(4){
+                     i{
+                        background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center;
+    //                  background-size: 1.104166rem 1.354166rem;
+                        background-size:100%;
+                     }
+                    
+                }
+                 &:nth-child(5){
+                     i{
+                        background: url("../img/icons/tab_button_my_normal.png") no-repeat center center;
+                        background-size: 100%;
+                     }
+                    
+                }
+            }
+           
+        }
+    }
 .T_index{
     .content{
         position: relative;
         height: 91.8%;
         overflow:hidden;
+        #jiazai{
+            width: 100%;
+           height: 8.333333rem;
+            position: absolute;
+            top: -8.333333rem;
+            left: 0;
+            background: url("../img/jiazai.gif") no-repeat center 40%;
+            background-size: 100%;
+        }
         .banner{
             width: 100%;
             height: 13.041666rem;
@@ -64,74 +141,159 @@ body{
                 }
             }
         }
-    }
-    .C_footer{
-        width: 100%;
-        height: 3.125rem;
-    //  background: black;
-        ul{
+        .news{
             width: 100%;
-            height: 100%;
-            li{
-                width: 20%;
-                height: 100%;
-                float: left;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-    //          background: pink;
-                i{
-                    display: block;
-                    width: 1.4375rem;
-                    height: 1.4375rem;
+            section{
+                width: 100%;
+                margin-top: 0.604166rem;
+                height: 22.375rem;
+                background-color:white ;
+                .date{
+//                  background: pink;
+                    width: 100%;
+                    height: 3.270833rem;
+                    line-height: 3.270833rem;
+                    text-align: center;
+                    font-size:1.041666rem;
+                    color: #d0d0d0;
                 }
-                span{
-                    color: #686868;
-                    font-size: 0.625rem;
+                .pic{
+                    width: 100%;
+                    height: 13.020833rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
-                 &:nth-child(1){
-                     i{
-                        background: url("../img/icons/tab_button_homepage_selected.png") no-repeat 0.020833rem 0.020833rem;
-    //                  background-size: 1.3125rem 1.083333rem;
-                        background-size:100%;
-                     }
-                    
-                }
-                 &:nth-child(2){
-                     i{
-                        background: url("../img/icons/tab_button_store_normal.png") no-repeat center center;
-    //                  background-size: 1.145833rem 1.354166rem;
-                        background-size:100%;
-                     }
-                    
-                }
-                 &:nth-child(3){
-                     i{
-                        background: url("../img/icons/tab_button_community_normal.png") no-repeat center center;
-    //                  background-size: 1.375rem 1.354166rem;
-                        background-size:100%;
-                     }
-                    
-                }
-                 &:nth-child(4){
-                     i{
-                        background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center;
-    //                  background-size: 1.104166rem 1.354166rem;
-                        background-size:100%;
-                     }
-                    
-                }
-                 &:nth-child(5){
-                     i{
-                        background: url("../img/icons/tab_button_my_normal.png") no-repeat center center;
-                        background-size: 100%;
-                     }
-                    
-                }
+               .message{
+                   padding-left:1.3125rem;
+                   padding-top: 0.833333rem;
+                   h3{
+                       width: 100%;
+                       height: 2.75rem;
+                       line-height: 2.75rem;
+                       font-size: 1.1875rem;
+                   }
+                   .message-a{
+                       width: 100%;
+                       height: 2.083333rem;
+                       line-height: 2.083333rem;
+                       font-size: 0.833333rem;
+                   }
+               }
             }
-           
         }
     }
+}
+//wengchuang.css
+.T_wenchuang{
+    display: flex;
+    flex-direction: column;
+    header{
+        height: 2.916666rem;
+        width: 100%;
+//      background: red;
+        display: flex;
+        justify-content: space-between;
+        background-color:white;
+        span{
+            display: block;
+            width: 3.75rem;
+            height: 100%;           
+        }
+        .search{
+            background: url("../img/wenchuang/search.png") no-repeat center center;
+            background-size:1.541666rem 1.458333rem;
+        }
+        .title{
+            background: url("../img/wenchuang/wc.png") no-repeat center center;
+           background-size:2.291666rem 1.104166rem;
+        }
+        .ruzhu{
+            margin-right: 1.041666rem;
+            background: url("../img/wenchuang/ruzhu.png") no-repeat center center;
+             background-size:3.75rem 0.958333rem;
+        }
+    }
+    .content{
+        width: 100%;
+//      height: 91.8%;
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+        .banner{
+            width: 100%;
+            height: 8.125rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+       .banner2{
+           width: 100%;
+           height: 11.25rem;
+           margin-top: 1.25rem;
+           padding-left:0.416666rem ;
+           img{
+               width: 6.520833rem;
+               height: 6.520833rem;
+           }
+           p{
+               width: 6.520833rem;;
+               height: 2.416666rem;
+               line-height: 2.416666rem;
+               text-align: center;              
+           }
+           .p1{
+                font-size: 0.833333rem;
+                color: #1e1e1e;
+           }
+           .price{
+               color: #9fb427;
+               font-size: 0.583333rem;
+           }
+       }
+    }
+    footer{
+        ul li{
+            
 
+        &:nth-child(1){
+             i{
+                background: url("../img/icons/tab_button_homepage_normal.png") no-repeat center center;
+//                  background-size: 1.3125rem 1.083333rem;
+                background-size:100%;
+             }
+            
+        }
+         &:nth-child(2){
+             i{
+                background: url("../img/icons/tab_button_store_selected.png") no-repeat center center;
+                background-size:100%;
+             }
+            
+        }
+         &:nth-child(3){
+             i{
+                background: url("../img/icons/tab_button_community_normal.png") no-repeat center center;
+                background-size:100%;
+             }
+            
+        }
+         &:nth-child(4){
+             i{
+                background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center;
+                background-size:100%;
+             }
+            
+        }
+         &:nth-child(5){
+             i{
+                background: url("../img/icons/tab_button_my_normal.png") no-repeat center center;
+                background-size: 100%;
+             }
+            
+        }
+        }
+    }
 }

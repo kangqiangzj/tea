@@ -1,6 +1,18 @@
 body { display: flex; flex-direction: column; justify-content: space-between; }
 
+.C_footer { width: 100%; height: 3.125rem; }
+.C_footer ul { width: 100%; height: 100%; }
+.C_footer ul li { width: 20%; height: 100%; float: left; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+.C_footer ul li i { display: block; width: 1.4375rem; height: 1.4375rem; }
+.C_footer ul li span { color: #686868; font-size: 0.625rem; }
+.C_footer ul li:nth-child(1) i { background: url("../img/icons/tab_button_homepage_selected.png") no-repeat center center; background-size: 100%; }
+.C_footer ul li:nth-child(2) i { background: url("../img/icons/tab_button_store_normal.png") no-repeat center center; background-size: 100%; }
+.C_footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }
+.C_footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center; background-size: 100%; }
+.C_footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
+
 .T_index .content { position: relative; height: 91.8%; overflow: hidden; }
+.T_index .content #jiazai { width: 100%; height: 8.333333rem; position: absolute; top: -8.333333rem; left: 0; background: url("../img/jiazai.gif") no-repeat center 40%; background-size: 100%; }
 .T_index .content .banner { width: 100%; height: 13.041666rem; }
 .T_index .content .banner .swiper-slide img { width: 100%; height: 100%; }
 .T_index .content .type { width: 100%; height: 17.708333rem; }
@@ -12,13 +24,31 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_index .content .type .type-bottom { width: 100%; height: 32.7%; display: flex; }
 .T_index .content .type .type-bottom .activity { width: 50%; height: 100%; background: url("../img/index-img/shouye_06.png") no-repeat center center; background-size: 100%; }
 .T_index .content .type .type-bottom .chahua { width: 50%; height: 100%; background: url("../img/index-img/shouye_07.png") no-repeat center center; background-size: 100%; }
-.T_index .C_footer { width: 100%; height: 3.125rem; }
-.T_index .C_footer ul { width: 100%; height: 100%; }
-.T_index .C_footer ul li { width: 20%; height: 100%; float: left; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
-.T_index .C_footer ul li i { display: block; width: 1.4375rem; height: 1.4375rem; }
-.T_index .C_footer ul li span { color: #686868; font-size: 0.625rem; }
-.T_index .C_footer ul li:nth-child(1) i { background: url("../img/icons/tab_button_homepage_selected.png") no-repeat 0.02083rem 0.02083rem; background-size: 100%; }
-.T_index .C_footer ul li:nth-child(2) i { background: url("../img/icons/tab_button_store_normal.png") no-repeat center center; background-size: 100%; }
-.T_index .C_footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }
-.T_index .C_footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center; background-size: 100%; }
-.T_index .C_footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
+.T_index .content .news { width: 100%; }
+.T_index .content .news section { width: 100%; margin-top: 0.604166rem; height: 22.375rem; background-color: white; }
+.T_index .content .news section .date { width: 100%; height: 3.270833rem; line-height: 3.270833rem; text-align: center; font-size: 1.041666rem; color: #d0d0d0; }
+.T_index .content .news section .pic { width: 100%; height: 13.020833rem; }
+.T_index .content .news section .pic img { width: 100%; height: 100%; }
+.T_index .content .news section .message { padding-left: 1.3125rem; padding-top: 0.833333rem; }
+.T_index .content .news section .message h3 { width: 100%; height: 2.75rem; line-height: 2.75rem; font-size: 1.1875rem; }
+.T_index .content .news section .message .message-a { width: 100%; height: 2.083333rem; line-height: 2.083333rem; font-size: 0.833333rem; }
+
+.T_wenchuang { display: flex; flex-direction: column; }
+.T_wenchuang header { height: 2.916666rem; width: 100%; display: flex; justify-content: space-between; background-color: white; }
+.T_wenchuang header span { display: block; width: 3.75rem; height: 100%; }
+.T_wenchuang header .search { background: url("../img/wenchuang/search.png") no-repeat center center; background-size: 1.541666rem 1.458333rem; }
+.T_wenchuang header .title { background: url("../img/wenchuang/wc.png") no-repeat center center; background-size: 2.291666rem 1.104166rem; }
+.T_wenchuang header .ruzhu { margin-right: 1.041666rem; background: url("../img/wenchuang/ruzhu.png") no-repeat center center; background-size: 3.75rem 0.958333rem; }
+.T_wenchuang .content { width: 100%; flex: 1; overflow: hidden; position: relative; }
+.T_wenchuang .content .banner { width: 100%; height: 8.125rem; }
+.T_wenchuang .content .banner img { width: 100%; height: 100%; }
+.T_wenchuang .content .banner2 { width: 100%; height: 11.25rem; margin-top: 1.25rem; padding-left: 0.41667rem; }
+.T_wenchuang .content .banner2 img { width: 6.520833rem; height: 6.520833rem; }
+.T_wenchuang .content .banner2 p { width: 6.520833rem; height: 2.416666rem; line-height: 2.416666rem; text-align: center; }
+.T_wenchuang .content .banner2 .p1 { font-size: 0.833333rem; color: #1e1e1e; }
+.T_wenchuang .content .banner2 .price { color: #9fb427; font-size: 0.583333rem; }
+.T_wenchuang footer ul li:nth-child(1) i { background: url("../img/icons/tab_button_homepage_normal.png") no-repeat center center; background-size: 100%; }
+.T_wenchuang footer ul li:nth-child(2) i { background: url("../img/icons/tab_button_store_selected.png") no-repeat center center; background-size: 100%; }
+.T_wenchuang footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }
+.T_wenchuang footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center; background-size: 100%; }
+.T_wenchuang footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
