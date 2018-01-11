@@ -65,3 +65,47 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_wenchuang footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }
 .T_wenchuang footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center; background-size: 100%; }
 .T_wenchuang footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
+
+.T_my { height: 100%; display: flex; flex-direction: column; }
+.T_my .login_yemian { width: 100%; height: 100%; position: absolute; top: 0; left: 100%; transition: 0.5s ease-in-out; background: white; }
+.T_my .login_yemian .top { width: 100%; height: 2.916666rem; background: #b4292e; display: flex; justify-content: space-between; align-items: center; }
+.T_my .login_yemian .top span { display: block; height: 100%; color: white; }
+.T_my .login_yemian .top #back { margin-left: 0.208333rem; width: 2.083333rem; height: 2.083333rem; background: url(../img/icons/nav_icon_backwhite_normal.png) no-repeat center center; background-size: 1.466666rem; }
+.T_my .login_yemian .top .title { line-height: 2.916666rem; font-size: 0.875rem; }
+.T_my .login_yemian .top .call { margin-right: 0.3125rem; width: 2.083333rem; height: 2.083333rem; background: url(../img/icons/ic_phone_highlighted.png) no-repeat center center; background-size: 1.666666rem; }
+.T_my .login_yemian .main { width: 100%; margin-top: 2.4375rem; background: red; height: 15.208333rem; }
+.T_my header { width: 100%; height: 2.916666rem; display: flex; justify-content: space-between; }
+.T_my header .xinfeng { display: block; width: 4.375rem; height: 100%; background: url(../img/wode/xinfeng.png) no-repeat center center; background-size: 100%; }
+.T_my header .my { display: block; width: 3.5625rem; height: 100%; background: url(../img/wode/wode.png) no-repeat center center; background-size: 100%; }
+.T_my header .opt { display: block; width: 4rem; height: 100%; background: url(../img/wode/opt.png) no-repeat center center; background-size: 100%; }
+.T_my .content { flex: 1; overflow: hidden; }
+.T_my .content .mymessage { width: 100%; height: 5.208333rem; font-size: 0.833333rem; padding-left: 1.041666rem; color: white; }
+.T_my .content .mymessage .top { display: flex; }
+.T_my .content .mymessage .top .sex { display: block; margin-left: 0.416666rem; margin-right: 0.3125rem; width: 1.041666rem; height: 1.041666rem; background: url(../img/icons/ic_home_male.png) no-repeat center center; background-size: 100%; }
+.T_my .content .mymessage .lr { margin-top: 0.625rem; width: 100%; padding: 0 30.3%; display: flex; justify-content: space-around; }
+.T_my .content .mymessage .lr span { border-radius: 0.3125rem; display: block; width: 4.125rem; height: 1.875rem; line-height: 1.875rem; text-align: center; background: orange; }
+.T_my .content .guanzhu { width: 100%; height: 3.583333rem; display: flex; font-size: 0.833333rem; background: white; }
+.T_my .content .guanzhu p { width: 25%; height: 100%; line-height: 3.583333rem; color: #717171; }
+.T_my .content .guanzhu p span { padding: 0 0.208333rem; color: #2e2e2e; }
+.T_my .content .guanzhu .tea { background: url(../img/wode/tea.png) no-repeat center top; background-size: 4.1875rem 2.833333rem; }
+.T_my .content .guanzhu .share { background: url(../img/wode/share.png) no-repeat right center; background-size: 3.541666rem 3.541666rem; }
+.T_my .content .main { width: 100%; }
+.T_my .content .main ul { width: 100%; display: flex; flex-wrap: wrap; }
+.T_my .content .main ul li { padding: 1.875rem 0; display: flex; flex-direction: column; align-items: center; justify-content: space-between; width: 33.333%; height: 7.916666rem; background: #ffffff; border-right: 0.020833rem solid #f5f5f5; border-bottom: 0.020833rem solid #f5f5f5; }
+.T_my .content .main ul li span { font-size: 0.833333rem; color: #717171; }
+.T_my .content .main ul li i { display: block; width: 1.791666rem; height: 1.791666rem; }
+.T_my .content .main ul li:nth-child(1) i { background: url(../img/wode/wode_03.png) no-repeat center center; background-size: 100%; }
+.T_my .content .main ul li:nth-child(2) i { background: url(../img/wode/wode_05.png) no-repeat center center; background-size: 100%; }
+.T_my .content .main ul li:nth-child(3) { border-right: none; }
+.T_my .content .main ul li:nth-child(3) i { background: url(../img/wode/wode_12.png) no-repeat center center; background-size: 100%; }
+.T_my .content .main ul li:nth-child(4) { border-bottom: none; }
+.T_my .content .main ul li:nth-child(4) i { background: url(../img/wode/wode_13.png) no-repeat center center; background-size: 100%; }
+.T_my .content .main ul li:nth-child(5) { border-bottom: none; }
+.T_my .content .main ul li:nth-child(5) i { background: url(../img/wode/wode_14.png) no-repeat center center; background-size: 100%; }
+.T_my .content .main ul li:nth-child(6) { border-right: none; border-bottom: none; }
+.T_my .content .main ul li:nth-child(6) i { background: url(../img/wode/wode_15.png) no-repeat center center; background-size: 100%; }
+.T_my .C_footer ul li:nth-child(1) i { background: url("../img/icons/tab_button_homepage_normal.png") no-repeat center center; background-size: 100%; }
+.T_my .C_footer ul li:nth-child(2) i { background: url("../img/icons/tab_button_store_normal.png") no-repeat center center; background-size: 100%; }
+.T_my .C_footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }
+.T_my .C_footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center; background-size: 100%; }
+.T_my .C_footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_selected.png") no-repeat center center; background-size: 100%; }

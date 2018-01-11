@@ -216,13 +216,23 @@
 					"img/icons/tab_button_my_normal.png"
 				],
 				"refer": [
-					"html/wenchuang.html"
+					"html/wenchuang.html",
+					"html/my.html"
 				],
 				"priority": 0
 			},
 			"html/wenchuang.html": {
 				"resources": [],
 				"refer": [
+					"html/index.html",
+					"html/my.html"
+				],
+				"priority": 0
+			},
+			"html/my.html": {
+				"resources": [],
+				"refer": [
+					"html/wenchuang.html",
 					"html/index.html"
 				],
 				"priority": 0

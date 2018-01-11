@@ -344,9 +344,267 @@ body{
        }
     }
     footer{
-        ul li{
+        ul li{        
+            &:nth-child(1){
+                 i{
+                    background: url("../img/icons/tab_button_homepage_normal.png") no-repeat center center;
+    //                  background-size: 1.3125rem 1.083333rem;
+                    background-size:100%;
+                 }
+                
+            }
+             &:nth-child(2){
+                 i{
+                    background: url("../img/icons/tab_button_store_selected.png") no-repeat center center;
+                    background-size:100%;
+                 }
+                
+            }
+             &:nth-child(3){
+                 i{
+                    background: url("../img/icons/tab_button_community_normal.png") no-repeat center center;
+                    background-size:100%;
+                 }
+                
+            }
+             &:nth-child(4){
+                 i{
+                    background: url("../img/icons/tab_button_nearby_normal.png") no-repeat center center;
+                    background-size:100%;
+                 }
+                
+            }
+             &:nth-child(5){
+                 i{
+                    background: url("../img/icons/tab_button_my_normal.png") no-repeat center center;
+                    background-size: 100%;
+                 }
+                
+            }
+        }
+    }
+}
+//T_my
+.T_my{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .login_yemian{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+//      left: 0;
+        transition: 0.5s ease-in-out;
+        background: white;      
+        .top{           
+            width: 100%;
+            height: 2.916666rem;
+            background: #b4292e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                display: block;
+                height: 100%;
+                color: white;
+            }
+            #back{
+                margin-left: 0.208333rem;
+                width: 2.083333rem;
+                height:2.083333rem;
+                background: url(../img/icons/nav_icon_backwhite_normal.png) no-repeat center center;
+                background-size: 1.466666rem;
+            }
+            .title{               
+                line-height: 2.916666rem;
+                font-size: 0.875rem;
+            }
+            .call{
+                margin-right: 0.3125rem;
+                width: 2.083333rem;
+                height:2.083333rem;
+                background: url(../img/icons/ic_phone_highlighted.png) no-repeat center center;
+                background-size: 1.666666rem;
+            }
+        }
+        .main{
+            width: 100%;
+            margin-top:2.4375rem;
+            background: red;
+            height: 15.208333rem;
+        }
+    }
+    header{
+        width: 100%;
+        height: 2.916666rem;
+        display: flex;
+        justify-content: space-between;
+        .xinfeng{
+            display: block;
+            width: 4.375rem;
+            height: 100%;
+            background: url(../img/wode/xinfeng.png) no-repeat center center;
+            background-size:100% ;
+        }
+        .my{
+            display: block;
+            width: 3.5625rem;
+            height: 100%;
+            background: url(../img/wode/wode.png) no-repeat center center;
+            background-size:100% ;
+        }
+         .opt{
+            display: block;
+            width: 4rem;
+            height: 100%;
+            background: url(../img/wode/opt.png) no-repeat center center;
+            background-size:100% ;
+        }
+    }
+    .content{
+        flex: 1;
+        overflow: hidden;      
+        .mymessage{
+            width: 100%;
+            height: 5.208333rem;
+//          background: red;
+            font-size: 0.833333rem;
+            padding-left: 1.041666rem;
+            color: white;
+            .top{
+                display:flex;
+                .id{
+                
+                }
+                .sex{
+                    display: block;
+                    margin-left:0.416666rem;
+                    margin-right: 0.3125rem;
+                    width: 1.041666rem;
+                    height: 1.041666rem;
+                    background: url(../img/icons/ic_home_male.png) no-repeat center center;
+                    background-size: 100%;
+                }
+            }
+            .lr{
+                margin-top: 0.625rem;
+                width: 100%;
+                padding: 0 30.3%;
+                display: flex;
+                justify-content: space-around;
+                span{
+                    border-radius:0.3125rem;
+                    display: block;
+                    width: 4.125rem;
+                    height: 1.875rem;
+                    line-height: 1.875rem;
+                    text-align: center;
+                    background: orange;
+                }
+            }
+        }
+        .guanzhu{
+            width: 100%;
+            height: 3.583333rem;
+            display: flex;
+            font-size: 0.833333rem;  
+            background: white;         
+            p{
+                width:25%;
+                height: 100%;
+                line-height: 3.583333rem;
+//              background-color:red ;
+                color: #717171;
+                span{
+                    padding: 0 0.208333rem;
+                    color:#2e2e2e ;
+                }
+            }
+            .tea{
+                background:url(../img/wode/tea.png) no-repeat center top;
+                background-size:4.1875rem 2.833333rem;
+            }
+            .share{
+                background:url(../img/wode/share.png) no-repeat right center;
+                background-size: 3.541666rem 3.541666rem;
+            }
+        }
+        .main{
             
-
+            width: 100%;
+            ul{
+                width: 100%;
+                display: flex;
+                 flex-wrap: wrap;
+                li{
+                    padding: 1.875rem 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 33.333%;
+                    height: 7.916666rem; 
+                    background: #ffffff;
+                    border-right: 0.020833rem solid #f5f5f5;
+                    border-bottom: 0.020833rem solid #f5f5f5;
+                    span{
+                        font-size:0.833333rem;
+                        color: #717171;
+                    }           
+                    i{
+                        display: block;
+                        width: 1.791666rem;
+                        height:1.791666rem;                        
+                    }
+                    &:nth-child(1){
+                        i{
+                            background: url(../img/wode/wode_03.png) no-repeat center center;
+                            background-size: 100%;
+                        }                       
+                    }
+                    &:nth-child(2){
+                        i{
+                            background: url(../img/wode/wode_05.png) no-repeat center center;
+                            background-size: 100%;
+                        }                       
+                    }
+                    &:nth-child(3){
+                        border-right: none;
+                        i{
+                            background: url(../img/wode/wode_12.png) no-repeat center center;
+                            background-size: 100%;
+                        }                       
+                    }
+                    &:nth-child(4){
+                        border-bottom:none;
+                        i{
+                            background: url(../img/wode/wode_13.png) no-repeat center center;
+                            background-size: 100%;
+                        }                       
+                    }
+                    &:nth-child(5){
+                        border-bottom:none;
+                        i{
+                            background: url(../img/wode/wode_14.png) no-repeat center center;
+                            background-size: 100%;
+                        }                       
+                    }
+                    &:nth-child(6){
+                        border-right: none;
+                        border-bottom:none;
+                        i{
+                            background: url(../img/wode/wode_15.png) no-repeat center center;
+                            background-size: 100%;
+                        }                       
+                    }
+                }
+            }
+        }
+    }
+.C_footer{
+    ul li{        
         &:nth-child(1){
              i{
                 background: url("../img/icons/tab_button_homepage_normal.png") no-repeat center center;
@@ -357,7 +615,7 @@ body{
         }
          &:nth-child(2){
              i{
-                background: url("../img/icons/tab_button_store_selected.png") no-repeat center center;
+                background: url("../img/icons/tab_button_store_normal.png") no-repeat center center;
                 background-size:100%;
              }
             
@@ -378,11 +636,11 @@ body{
         }
          &:nth-child(5){
              i{
-                background: url("../img/icons/tab_button_my_normal.png") no-repeat center center;
+                background: url("../img/icons/tab_button_my_selected.png") no-repeat center center;
                 background-size: 100%;
              }
             
         }
-        }
     }
+}
 }
