@@ -217,7 +217,8 @@
 				],
 				"refer": [
 					"html/wenchuang.html",
-					"html/my.html"
+					"html/my.html",
+					"html/fujin.html"
 				],
 				"priority": 0
 			},
@@ -225,7 +226,8 @@
 				"resources": [],
 				"refer": [
 					"html/index.html",
-					"html/my.html"
+					"html/my.html",
+					"html/fujin.html"
 				],
 				"priority": 0
 			},
@@ -233,7 +235,17 @@
 				"resources": [],
 				"refer": [
 					"html/wenchuang.html",
-					"html/index.html"
+					"html/index.html",
+					"html/fujin.html"
+				],
+				"priority": 0
+			},
+			"html/fujin.html": {
+				"resources": [],
+				"refer": [
+					"html/my.html",
+					"html/index.html",
+					"html/wenchuang.html"
 				],
 				"priority": 0
 			}

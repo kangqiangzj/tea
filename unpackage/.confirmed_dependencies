@@ -24,19 +24,29 @@
 		],
 		"refer": [
 			"html/wenchuang.html",
-			"html/my.html"
+			"html/my.html",
+			"html/fujin.html"
 		]
 	},
 	"html/wenchuang.html": {
 		"refer": [
 			"html/index.html",
-			"html/my.html"
+			"html/my.html",
+			"html/fujin.html"
 		]
 	},
 	"html/my.html": {
 		"refer": [
 			"html/wenchuang.html",
-			"html/index.html"
+			"html/index.html",
+			"html/fujin.html"
+		]
+	},
+	"html/fujin.html": {
+		"refer": [
+			"html/my.html",
+			"html/index.html",
+			"html/wenchuang.html"
 		]
 	}
 }

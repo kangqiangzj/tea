@@ -10,7 +10,7 @@ $(".C_footer").on("touchstart","li",function(){
 	}else if(index == 2){
 		window.location.href = "#";
 	}else if(index == 3){
-		window.location.href = "#"
+		window.location.href = "fujin.html"
 	}else if(index == 4){
 		window.location.href = "my.html";
 	}

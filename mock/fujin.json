@@ -1,0 +1,17 @@
+{
+	"status":1,
+	"message":"success",
+	"data":[
+		{"id":0,"img":"../img/fujin/fujin_07.png"},
+		{"id":1,"img":"../img/fujin/fujin_09.png"},
+		{"id":2,"img":"../img/fujin/fujin_11.png"},
+		{"id":3,"img":"../img/fujin/fujin_13.png"},
+		{"id":4,"img":"../img/fujin/fujin_15.png"},
+		{"id":5,"img":"../img/fujin/fujin_17.png"},
+		{"id":6,"img":"../img/fujin/fujin_21.png"},
+		{"id":7,"img":"../img/fujin/fujin_23.png"},
+		{"id":8,"img":"../img/fujin/fujin_25.png"},
+		{"id":9,"img":"../img/fujin/fujin_27.png"},
+		{"id":10,"img":"../img/fujin/fujin_29.png"}
+	]
+}
