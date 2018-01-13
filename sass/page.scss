@@ -3,6 +3,27 @@ body{
     flex-direction:column;
     justify-content: space-between;
 }
+    .C_header{
+        width: 100%;
+        height: 2.916666rem;
+        background: white;
+        display: flex;
+//      flex-direction: column;
+        span{
+            display: block;
+            width: 4.291666rem;
+            height: 100%;
+        }
+        .back{
+            background: url(../img/icons/nav_icon_back_highlighted.png) no-repeat center center;
+            background-size: 50%;
+        }
+        .title{
+            text-align: center;
+            line-height: 2.916666rem;
+            margin-left: 23%;
+        }
+    }
    .C_footer{
        transition: 5s;
         width: 100%;
@@ -405,8 +426,9 @@ body{
         height: 100%;
         position: absolute;
         top: 0;
-        left: 100%;
-//      left: 0;
+//      left: 100%;
+        left: 0;
+        display: none;
         transition: 0.5s ease-in-out;
         background: white;      
         .top{           
@@ -705,14 +727,15 @@ body{
     height: 100%;
     #map{
         width: 100%;
-        height: 100%;
-        background: white;
-        z-index: 9999;       
+        height: 92.5%;
+        background: white;      
         position: absolute;
         top: 0;
-        left: 100%;
+        left: 0;
+        display:none;
         transition: 0.5s ease-in-out;
         display: flex;
+        z-index: -9999;
         flex-direction:column;
         p{
             background: white;
@@ -728,6 +751,7 @@ body{
         }
         #amap{
             flex: 1;
+            height: 100%;
         }
     }
     header{
@@ -814,4 +838,137 @@ body{
     }
 }
     
+}
+
+//T_shipin
+.T_shipin{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    .content{
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        .pic{
+            width: 100%;
+            height: 10.8125rem;
+            margin-bottom: 0.625rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+//ketang
+.T_ketang,.T_chahua,.T_activity{
+     display: flex;
+    height: 100%;
+    flex-direction: column;
+    .content{
+         flex: 1;
+        position: relative;
+        overflow: hidden;
+        .box{
+            width: 100%;
+            height: 19.083333rem;
+            margin-bottom: 0.725rem;
+            .pic{
+                width: 100%;
+                height: 12.979166rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .message{
+//              padding-top: 1.25rem;
+                width: 100%;
+                height: 6.104166rem;
+                overflow: hidden;
+                padding-left:1.25rem ;
+                background: white;
+                
+                h4{
+                    width: 100%;
+                    height: 3.4rem;
+                    line-height: 3.4rem;
+//                  margin-top: 0.833333rem;
+                    font-size: 1.145833rem;
+                }
+                p{
+                    width: 100%;
+                    height: 2.083333rem;
+                    font-size: 0.791666rem;
+                }
+            }
+        }
+    }
+}
+//detail
+.T_detail{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .C_header{
+        
+    }
+    .content{
+        flex: 1;
+        position:relative;
+        overflow:auto;
+        height: 100%;
+           img{
+            width: 100%;
+            height: 100%;
+            }
+
+           
+    }
+    footer{
+        height: 2.916666rem;
+        width: 100%;
+        display: flex;
+        position: static;
+        .left{
+            width: 33.2%;
+            height: 100%;
+             span{
+                display: block;
+                height: 100%;
+                padding-left: 2.166666rem;
+                font-size:0.75rem;
+                line-height: 2.916666rem;
+                background: url(../img/icons/tool_icon_time_normal.png) no-repeat 10% center;
+                background-size:13%;
+             }
+        }
+        .right{
+            width: 66.8%;
+            height: 100%;
+            display: flex;
+            
+            span{
+                display: block;
+                height: 100%;
+                width: 33.33%;
+                font-size: 0.75rem;
+                background: yellow;
+                text-align: center;
+                line-height: 2.916666rem;
+                &:nth-child(1){
+                    background: url(../img/icons/tool_icon_share_normal.png) no-repeat 5% center;
+                    background-size:20%;
+                }
+                 &:nth-child(2){
+                    background: url(../img/icons/tool_icon_comment_normal.png) no-repeat 5% center;
+                    background-size:20%;
+                }
+                 &:nth-child(3){
+                    background: url(../img/icons/tool_icon_like_normal.png) no-repeat 5% center;
+                    background-size:20%;
+                }
+            }
+        }
+    }
 }

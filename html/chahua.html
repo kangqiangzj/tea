@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>茶话</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/page.css"/>
+	</head>
+	<body class="T_chahua">
+		<header class="C_header">
+			<span class="back"></span>
+			<span class="title">茶话</span>
+			<span></span>
+		</header>
+		<div class="content" id="wrapper">
+			<div class="scroll_content" id="scroll">
+				
+			</div>
+		</div>
+		<script src="../js/lib/zepto_1.1.3.js"></script>
+		<script src="../js/lib/iscroll-min.js"></script>
+		<script src="../js/lib/template.js"></script>
+		<script src="../js/public.js"></script>
+		<script type="text/html" id="chahua">
+			{{each datas as data}}
+				<div class="box">
+					<div class="pic">
+						<img src="{{data.img}}"/>
+					</div>
+					<div class="message">
+						<h4>{{data.title1}}</h4>
+						<p>{{data.title2}}</p>
+					</div>
+				</div>
+			{{/each}}
+		</script>
+		<script>
+			var scroll = new IScroll("#wrapper",{
+				mouseWheel:true
+			})
+			$.ajax({
+				type:"get",
+				dataType:"json",
+				url:"../mock/list_pic.json",
+				async:true,
+				success:function(data){
+//					console.log(data.data2);
+					var html = template("chahua",{datas:data.data3})
+					$(".scroll_content").append(html);
+					scroll.refresh();
+				}
+			});
+		</script>
+	</body>
+</html>

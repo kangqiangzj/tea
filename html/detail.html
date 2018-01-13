@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/page.css"/>
+	</head>
+	<body class="T_detail">
+		<header class="C_header">
+			<span class="back"></span>
+			<span class="title">详情</span>
+			<span></span>
+		</header>
+		
+		<div class="content" id="wrapper">
+			<div class="scroll_content" id="scroll">
+				<!--<div>-->
+				<!--<img src="../img/detail/puer.png"/>-->
+				<!--</div>-->
+			</div>
+		</div>
+		<footer>
+			<div class="left">
+				<span>5月前</span>
+			</div>
+			<div class="right">
+				<span>分享</span>
+				<span>评论</span>
+				<span>616</span>
+			</div>
+		</footer>
+		<script src="../js/lib/zepto_1.1.3.js"></script>
+		<script src="../js/lib/template.js"></script>
+		<script src="../js/lib/iscroll-min.js"></script>
+		
+		<script src="../js/public.js"></script>
+		
+		
+		
+		<script>
+//			var iscroll = new IScroll("#wrapper",{
+//				mouseWheel:true
+//			})
+			var goodID = getQueryString("goodID");
+			getData(goodID)
+			function getQueryString(name){
+				var req = new RegExp("(^|&)"+name+"=([^&]*)(&|$)")
+				var r = window.location.search.substr(1).match(req)
+				if(r!=null){
+					return decodeURI(r[2])
+				}
+				return null
+			}
+
+			function getData(goodID){
+				$.ajax({
+				type:"get",
+				dataType:"json",
+				url:"../mock/teaData.json",
+				async:true,
+				success:function(data){
+					var thisdata = data.data;
+					var iso=$("#scroll")
+					$.each(thisdata, function(index) {
+						if(goodID == thisdata[index].id){
+							
+							var html = template("detail",{datas:thisdata[index]})
+									
+						}	
+//						$(".scroll_content").append(html);
+						iso.append(html)
+//						iscroll.refresh();//
+					});
+						
+				}
+			});
+			}
+		</script>
+		<script type="text/html" id="detail">
+			<img src="{{datas.detal}}"/>			
+		</script>
+	</body>
+</html>

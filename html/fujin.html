@@ -91,12 +91,16 @@
 			
 			$(".ditu").on("touchend",function(){
 				$("#map").css({
-					"left":"0"
+					"display":"block",
+					"z-index":9999
+//					"left":"0"
 				})
 			})
 			$(".fanhui").on("touchend",function(){
 				$("#map").css({
-					"left":"100%"
+					"display":"none",
+//					"left":"100%"
+					"z-index":9999
 				})
 			})
 			var amap = new AMap.Map("amap",{

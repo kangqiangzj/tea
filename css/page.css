@@ -1,5 +1,10 @@
 body { display: flex; flex-direction: column; justify-content: space-between; }
 
+.C_header { width: 100%; height: 2.916666rem; background: white; display: flex; }
+.C_header span { display: block; width: 4.291666rem; height: 100%; }
+.C_header .back { background: url(../img/icons/nav_icon_back_highlighted.png) no-repeat center center; background-size: 50%; }
+.C_header .title { text-align: center; line-height: 2.916666rem; margin-left: 23%; }
+
 .C_footer { transition: 5s; width: 100%; height: 3.125rem; display: block; position: fixed; bottom: 0; left: 0; background: white; }
 .C_footer ul { width: 100%; height: 100%; }
 .C_footer ul li { width: 20%; height: 100%; float: left; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
@@ -71,7 +76,7 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_wenchuang footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
 
 .T_my { height: 100%; display: flex; flex-direction: column; }
-.T_my .login_yemian, .T_my .register_yemian { width: 100%; height: 100%; position: absolute; top: 0; left: 100%; transition: 0.5s ease-in-out; background: white; }
+.T_my .login_yemian, .T_my .register_yemian { width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none; transition: 0.5s ease-in-out; background: white; }
 .T_my .login_yemian .top, .T_my .register_yemian .top { width: 100%; height: 2.916666rem; background: #b4292e; display: flex; justify-content: space-between; align-items: center; }
 .T_my .login_yemian .top span, .T_my .register_yemian .top span { display: block; height: 100%; color: white; }
 .T_my .login_yemian .top #back, .T_my .register_yemian .top #back { margin-left: 0.208333rem; width: 2.083333rem; height: 2.083333rem; background: url(../img/icons/nav_icon_backwhite_normal.png) no-repeat center center; background-size: 1.466666rem; }
@@ -121,10 +126,10 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_my .C_footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_selected.png") no-repeat center center; background-size: 100%; }
 
 .T_fujin { display: flex; flex-direction: column; height: 100%; }
-.T_fujin #map { width: 100%; height: 100%; background: white; z-index: 9999; position: absolute; top: 0; left: 100%; transition: 0.5s ease-in-out; display: flex; flex-direction: column; }
+.T_fujin #map { width: 100%; height: 92.5%; background: white; position: absolute; top: 0; left: 0; display: none; transition: 0.5s ease-in-out; display: flex; z-index: -9999; flex-direction: column; }
 .T_fujin #map p { background: white; width: 100%; height: 2.916666rem; }
 .T_fujin #map p .fanhui { display: block; width: 3.25rem; height: 100%; background: url(../img/icons/ic_arrow_hint.png) no-repeat center center; background-size: 50%; }
-.T_fujin #map #amap { flex: 1; }
+.T_fujin #map #amap { flex: 1; height: 100%; }
 .T_fujin header { height: 2.916666rem; width: 100%; display: flex; justify-content: space-between; background-color: white; }
 .T_fujin header span { display: block; }
 .T_fujin header .dinwei { width: 5.416666rem; height: 100%; background: url(../img/fujin/fujin_02.png) no-repeat center center; background-size: 100%; }
@@ -139,3 +144,29 @@ body { display: flex; flex-direction: column; justify-content: space-between; }
 .T_fujin .C_footer ul li:nth-child(3) i { background: url("../img/icons/tab_button_community_normal.png") no-repeat center center; background-size: 100%; }
 .T_fujin .C_footer ul li:nth-child(4) i { background: url("../img/icons/tab_button_nearby_selected.png") no-repeat center center; background-size: 100%; }
 .T_fujin .C_footer ul li:nth-child(5) i { background: url("../img/icons/tab_button_my_normal.png") no-repeat center center; background-size: 100%; }
+
+.T_shipin { display: flex; height: 100%; flex-direction: column; }
+.T_shipin .content { flex: 1; position: relative; overflow: hidden; }
+.T_shipin .content .pic { width: 100%; height: 10.8125rem; margin-bottom: 0.625rem; }
+.T_shipin .content .pic img { width: 100%; height: 100%; }
+
+.T_ketang, .T_chahua, .T_activity { display: flex; height: 100%; flex-direction: column; }
+.T_ketang .content, .T_chahua .content, .T_activity .content { flex: 1; position: relative; overflow: hidden; }
+.T_ketang .content .box, .T_chahua .content .box, .T_activity .content .box { width: 100%; height: 19.083333rem; margin-bottom: 0.725rem; }
+.T_ketang .content .box .pic, .T_chahua .content .box .pic, .T_activity .content .box .pic { width: 100%; height: 12.979166rem; }
+.T_ketang .content .box .pic img, .T_chahua .content .box .pic img, .T_activity .content .box .pic img { width: 100%; height: 100%; }
+.T_ketang .content .box .message, .T_chahua .content .box .message, .T_activity .content .box .message { width: 100%; height: 6.104166rem; overflow: hidden; padding-left: 1.25rem; background: white; }
+.T_ketang .content .box .message h4, .T_chahua .content .box .message h4, .T_activity .content .box .message h4 { width: 100%; height: 3.4rem; line-height: 3.4rem; font-size: 1.145833rem; }
+.T_ketang .content .box .message p, .T_chahua .content .box .message p, .T_activity .content .box .message p { width: 100%; height: 2.083333rem; font-size: 0.791666rem; }
+
+.T_detail { display: flex; flex-direction: column; height: 100%; }
+.T_detail .content { flex: 1; position: relative; overflow: auto; height: 100%; }
+.T_detail .content img { width: 100%; height: 100%; }
+.T_detail footer { height: 2.916666rem; width: 100%; display: flex; position: static; }
+.T_detail footer .left { width: 33.2%; height: 100%; }
+.T_detail footer .left span { display: block; height: 100%; padding-left: 2.166666rem; font-size: 0.75rem; line-height: 2.916666rem; background: url(../img/icons/tool_icon_time_normal.png) no-repeat 10% center; background-size: 13%; }
+.T_detail footer .right { width: 66.8%; height: 100%; display: flex; }
+.T_detail footer .right span { display: block; height: 100%; width: 33.33%; font-size: 0.75rem; background: yellow; text-align: center; line-height: 2.916666rem; }
+.T_detail footer .right span:nth-child(1) { background: url(../img/icons/tool_icon_share_normal.png) no-repeat 5% center; background-size: 20%; }
+.T_detail footer .right span:nth-child(2) { background: url(../img/icons/tool_icon_comment_normal.png) no-repeat 5% center; background-size: 20%; }
+.T_detail footer .right span:nth-child(3) { background: url(../img/icons/tool_icon_like_normal.png) no-repeat 5% center; background-size: 20%; }

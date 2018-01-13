@@ -1,0 +1,41 @@
+{
+	"data1":[
+		{"id":0,"img":"../img/index-img/images/shipin_02.png"},
+		{"id":1,"img":"../img/index-img/images/shipin_04.png"},
+		{"id":2,"img":"../img/index-img/images/shipin_06.png"},
+		{"id":3,"img":"../img/index-img/images/shipin_08.png"},
+		{"id":4,"img":"../img/index-img/images/shipin_10.png"},
+		{"id":5,"img":"../img/index-img/images/shipin_12.png"},
+		{"id":6,"img":"../img/index-img/images/shipin_14.png"},
+		{"id":7,"img":"../img/index-img/images/shipin_16.png"}
+	],
+	"data2":[
+		{"id":0,"img":"../img/index-img/images/ketang_02.png","title1":"爆发自然","title2":"对付秋燥饮青茶"},
+		{"id":1,"img":"../img/index-img/images/ketang_04.png","title1":"你真的会保存普洱吗","title2":"这些存茶方式会害了你的普洱"},
+		{"id":2,"img":"../img/index-img/images/ketang_06.png","title1":"金花茶是金银花吗","title2":""},
+		{"id":3,"img":"../img/index-img/images/ketang_08.png","title1":"红茶对胃肠道的好处","title2":"细数红茶的保健功能"},
+		{"id":4,"img":"../img/index-img/images/ketang_10.png","title1":"我们常说的喝茶能减肥是真的吗","title2":"让我们来揭晓答案"},
+		{"id":5,"img":"../img/index-img/images/ketang_12.png","title1":"夏季喝茶的好处有哪些呢","title2":"你知道几个"},
+		{"id":6,"img":"../img/index-img/images/ketang_14.png","title1":"夏季将至","title2":"六种药茶，助您亲热补水"},
+		{"id":7,"img":"../img/index-img/images/ketang_16.png","title1":"铁观音茶好，还是秋茶好","title2":""}
+		
+	],
+	"data3":[
+		{"id":1,"img":"../img/index-img/images/ketang_02.png","title1":"绍业堂诚聘","title2":"在这里遇见最好的自己"},
+		{"id":2,"img":"../img/index-img/images/ketang_04.png","title1":"普洱茶怎么喝最减肥","title2":"减肥茶，算上普洱一个"},
+		{"id":3,"img":"../img/index-img/images/ketang_06.png","title1":"茶说|雨生百谷茶清香","title2":""},
+		{"id":4,"img":"../img/index-img/images/ketang_08.png","title1":"职场中，你是哪杯茶","title2":"品品你的职场人生"},
+		{"id":5,"img":"../img/index-img/images/ketang_10.png","title1":"茶场争斗亦风流","title2":"一次穿越，带你到宋朝看茶斗"},
+		{"id":6,"img":"../img/index-img/images/ketang_12.png","title1":"以茶代酒","title2":"带你了解宴席上那点事儿"},
+		{"id":7,"img":"../img/index-img/images/ketang_14.png","title1":"你就是医我的药","title2":"以茶解忧，疗生疗心"}
+	],
+	"data4":[
+		{"id":1,"img":"../img/index-img/images/activity_02.png","title1":"金茶间--经过一杯茶"},
+		{"id":2,"img":"../img/index-img/images/activity_04.png","title1":"三千茶农生活馆（绿地中心店）"},
+		{"id":3,"img":"../img/index-img/images/activity_06.png","title1":"一念之间，人如茶香"},
+		{"id":4,"img":"../img/index-img/images/activity_08.png","title1":"十年之庆，与每一位爱茶之人"},
+		{"id":5,"img":"../img/index-img/images/activity_10.png","title1":"春节送礼篇"},
+		{"id":6,"img":"../img/index-img/images/activity_12.png","title1":"随手拍#茶生活#，看大奖究竟花落谁家"},
+		{"id":7,"img":"../img/index-img/images/activity_14.png","title1":"随手拍#茶生活#超值大奖揭秘"}
+	]
+}

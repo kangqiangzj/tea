@@ -56,10 +56,12 @@ function register(){
 			var data = JSON.parse(data)
 			if(data.success){
 				$(".login_yemian").css({
-					"left":0
+//					"left":0
+					"display":"block"
 					});
 				$(".register_yemian").css({
-						"left":"100%"
+//						"left":"100%"
+					"display":"none"
 					});
 				alert("注册成功")
 	//			window.location.reload();
@@ -84,21 +86,25 @@ $(".opt").on("touchend",function(){
 })
 $(".login").on("touchend",function(){
 	$(".login_yemian").css({
-		"left":0
+		"display":"block"
+//		"left":0
 	})
 })
 $(".register").on("touchend",function(){
 	$(".register_yemian").css({
-		"left":0
+		"display":"block"
+//		"left":0
 	})
 })
 $(".login_yemian #back").on("touchend",function(){
 	$(".login_yemian").css({
-		"left":"100%"
+		"display":"none"
+//		"left":"100%"
 	})
 })
 $(".register_yemian #back").on("touchend",function(){
 	$(".register_yemian").css({
-		"left":"100%"
+//		"left":"100%"
+		"display":"none"
 	})
 })
