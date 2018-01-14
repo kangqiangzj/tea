@@ -6,7 +6,7 @@
 		"name": "1.0.0",/*应用版本名称*/
 		"code": "83"
 	},
-	"description": "",/*应用描述信息*/
+	"description": "一个茶爱好者的交流品台",/*应用描述信息*/
 	"icons": {
 		"72": "icon.png"
 	},
@@ -223,7 +223,8 @@
 					"html/activity.html",
 					"html/ketang.html",
 					"html/chahua.html",
-					"html/detail.html"
+					"html/detail.html",
+					"html/shequ.html"
 				],
 				"priority": 0
 			},
@@ -232,7 +233,8 @@
 				"refer": [
 					"html/index.html",
 					"html/my.html",
-					"html/fujin.html"
+					"html/fujin.html",
+					"html/shequ.html"
 				],
 				"priority": 0
 			},
@@ -279,6 +281,21 @@
 				"resources": [],
 				"refer": [
 					"html/index.html"
+				],
+				"priority": 0
+			},
+			"html/detail.html": {
+				"resources": [],
+				"refer": [
+					"html/index.html"
+				],
+				"priority": 0
+			},
+			"html/shequ.html": {
+				"resources": [],
+				"refer": [
+					"html/fujin.html",
+					"html/wenchuang.html"
 				],
 				"priority": 0
 			}

@@ -30,7 +30,7 @@
 			<div class="right">
 				<span>分享</span>
 				<span>评论</span>
-				<span>616</span>
+				<span id="dianxin">616</span>
 			</div>
 		</footer>
 		<script src="../js/lib/zepto_1.1.3.js"></script>
@@ -55,7 +55,23 @@
 				}
 				return null
 			}
-
+//			var count;
+			$("#dianxin").on("touchend",function(){
+//				count = 1
+//				if((count%2) == 1){
+//					count++
+					$("#dianxin").css({
+						"background": "url(../img/icons/tool_icon_like_selected.png) no-repeat 5% center",
+	                    "background-size":"20%"
+					})
+//				}else{
+//					$("#dianxin").css({
+//						"background": "url(../img/icons/tool_icon_like_normal.png) no-repeat 5% center",
+//	                    "background-size":"20%"
+//					})
+//				}
+				
+			})
 			function getData(goodID){
 				$.ajax({
 				type:"get",

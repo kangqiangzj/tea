@@ -8,7 +8,7 @@ $(".C_footer").on("touchstart","li",function(){
 	}else if(index == 1){
 		window.location.href = "wenchuang.html";
 	}else if(index == 2){
-		window.location.href = "#";
+		window.location.href = "shequ.html";
 	}else if(index == 3){
 		window.location.href = "fujin.html"
 	}else if(index == 4){
