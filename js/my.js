@@ -25,28 +25,31 @@ function _login(){
 	var username = $("#login_username").val(),
 		password = $("#login_password").val();
 		
-	
-	$.ajax({
-		type:"post",
-		url:"http://stuapi.ysd3g.com/api/login",
-		async:true,
-		data:{un:username,pwd:password,token:"aa4ccde8-3b85-476d-b68b-7f78f72e74d1"},
-		success:function(data){
-			var data = JSON.parse(data)
-			console.log(data.success);
-			if(data.success){
-				alert("登录成功")
-				localStorage.setItem("username",username)
-				$(".login_yemian").css({
-					"left":"100%"
-				});
-				$(".lr").remove();
-				window.location.reload();
-			}else{
-				alert("密码错了啊")
+	if(username==""){
+		alert("请输入用户名！")
+	}else{
+		$.ajax({
+			type:"post",
+			url:"http://stuapi.ysd3g.com/api/login",
+			async:true,
+			data:{un:username,pwd:password,token:"aa4ccde8-3b85-476d-b68b-7f78f72e74d1"},
+			success:function(data){
+				var data = JSON.parse(data)
+				console.log(data.success);
+				if(data.success){
+					alert("登录成功")
+					localStorage.setItem("username",username)
+					$(".login_yemian").css({
+						"left":"100%"
+					});
+					$(".lr").remove();
+					window.location.reload();
+				}else{
+					alert("密码错了啊")
+				}
 			}
-		}
-	});
+		});
+	}
 }
 //register
 function register(){
